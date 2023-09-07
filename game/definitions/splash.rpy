@@ -39,7 +39,7 @@ init python:
     ##
     ## Syntax to use: recolorize("path/to/your/image", "#color1hex", "#color2hex", contrast value)
     ## Example: recolorize("gui/menu_bg.png", "#bdfdff", "#e6ffff", 1.25)
-    def recolorize(path, blackCol="#ed8a88", whiteCol="#fbc0c0", contr=1.29):
+    def recolorize(path, blackCol="#fee6e6", whiteCol="#ed8a88", contr=1.29):
         return im.MatrixColor(im.MatrixColor(im.MatrixColor(path, im.matrix.desaturate() * im.matrix.contrast(contr)), im.matrix.colorize("#00f", "#fff")
             * im.matrix.saturation(120)), im.matrix.desaturate() * im.matrix.colorize(blackCol, whiteCol))
 
@@ -75,7 +75,7 @@ image menu_logo:
 image menu_bg:
     topleft
     "gui/menu_bg.png"
-    recolorize("gui/menu_bg.png", "#fbc0c0", "#fff", 1)
+    recolorize("gui/menu_bg.png", "#fbc0c0", "#ffffff", 1)
     menu_bg_move
 
 # This image shows the pause menu polka-dot image.
@@ -169,7 +169,7 @@ image menu_art_s_glitch:
 # This image shows the main menu screen in the main/pause menu.
 image menu_nav:
     "gui/overlay/main_menu.png"
-    #recolorize("gui/overlay/main_menu.png", "#fbc0c0")
+    recolorize("gui/overlay/main_menu.png", "#ed8a88")
     menu_nav_move
 
 ## Main Menu Effects
