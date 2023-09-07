@@ -75,14 +75,14 @@ image menu_logo:
 image menu_bg:
     topleft
     "gui/menu_bg.png"
-    # recolorize("gui/menu_bg.png", "#fbc0c0", "#fff", 1)
+    recolorize("gui/menu_bg.png", "#fbc0c0", "#fff", 1)
     menu_bg_move
 
 # This image shows the pause menu polka-dot image.
 image game_menu_bg:
     topleft
     "gui/menu_bg.png"
-    # recolorize("gui/menu_bg.png", "#fbc0c0", "#fff", 1)
+    recolorize("gui/menu_bg.png", "#fbc0c0", "#fff", 1)
     menu_bg_loop
 
 # This image transform shows the white fading effect in the main menu.
