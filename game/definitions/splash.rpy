@@ -169,7 +169,7 @@ image menu_art_s_glitch:
 # This image shows the main menu screen in the main/pause menu.
 image menu_nav:
     "gui/overlay/main_menu.png"
-    #recolorize("gui/overlay/main_menu.png", "#ffbde1")
+    #recolorize("gui/overlay/main_menu.png", "#fbc0c0")
     menu_nav_move
 
 ## Main Menu Effects
